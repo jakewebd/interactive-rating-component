@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="scripts.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
+  <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet" type="text/css" />
+  <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  <!-- Rating state start -->
+  <main>
 
-  How did we do?
+    <div id="before-submit-container" class="main-container">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <div class="some-star">
+        <i class="fa-solid fa-star"></i>
+      </div>
 
-  1 2 3 4 5
+      <div class="words">
 
-  Submit
+        <h1 class="heading">
+          How did we do?
+        </h1>
 
-  <!-- Rating state end -->
+        <p class="description">
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+          offering!
+        </p>
 
-  <!-- Thank you state start -->
+      </div>
 
-  You selected <!-- Add rating here --> out of 5
+      <div class="review-numbers">
 
-  Thank you!
+        <div id="review-item-1" class="review-item">1</div>
+        <div id="review-item-2" class="review-item">2</div>
+        <div id="review-item-3" class="review-item">3</div>
+        <div id="review-item-4" class="review-item">4</div>
+        <div id="review-item-5" class="review-item">5</div>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+      </div>
 
-  <!-- Thank you state end -->
+      <button class="submit-button" type="submit">SUBMIT</button>
 
-  
+    </div>
+
+    <div id="after-submit-container" class="main-container inactive">
+
+      <img class="phone-img" alt="phone" src="https://raw.githubusercontent.com/jakewebd/interactive-rating-component/3f1fd586c6f602c654f21458c861b14cdb3cf6e9/images/illustration-thank-you.svg" />
+
+      <p class="submitted-info">You submitted <span class="submit-amount">0</span> out of 5</p>
+
+      <p class="heading-2">
+        Thank you!
+      </p>
+
+      <p class="description-2">
+        We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+      </p>
+
+    </div>
+
+  </main>
+
+  <!--   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+
 </html>

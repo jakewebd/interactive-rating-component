@@ -1,0 +1,162 @@
+* {
+    font-family: Overpass,sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    overflow: hidden;
+}
+.main-container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+    position: relative;
+    transition: 0.4s;
+}
+.some-star {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: rgba(250,250,250,0.03);
+    border-radius: 20px;
+    position: relative;
+    margin-left: 1.5rem;
+    top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkorange;
+    font-size: 0.75rem;
+}
+.words {
+    margin-left: 1.5rem;
+    position: relative;
+    top: 2.5rem;
+}
+.heading {
+    color: white;
+    font-size: 1.3rem;
+}
+.description {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.7rem;
+    width: 90%;
+    line-height: 1.2rem;
+}
+.review-numbers {
+    position: relative;
+    top: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    width: 85%;
+}
+.review-item {
+    border-radius: 50px;
+    background-color: rgba(250,250,250,0.03);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.8rem;
+}
+.review-item:hover {
+    cursor: pointer;
+    background-color: darkorange;
+    color: white;
+}
+.review-item:active {
+    transform: scale(95%);
+}
+.submit-button {
+    position: relative;
+    top: 4.3rem;
+    width: 85%;
+    margin-left: 1.5rem;
+    background-color: darkorange;
+    border: none;
+    border-radius: 20px;
+    height: 2rem;
+    color: white;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+.submit-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: darkorange;
+}
+.submit-button:active {
+    transform: scale(95%);
+    cursor: pointer;
+    background-color: white;
+    color: darkorange;
+}
+
+/* styles for submitted component */
+
+#after-submit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 22vh;
+}
+.phone-img {
+    position: relative;
+    width: 8rem;
+    margin-top: 2rem;
+}
+.submitted-info {
+    text-align: center;
+    background-color: rgba(250,250,250,0.03);
+    width: 50%;
+    color: darkorange;
+    font-weight: 100;
+    font-size: 0.6rem;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1.5rem;
+}
+.heading-2 {
+    color: white;
+    font-size: 1.3rem;
+    margin: 1rem 0 0 0;
+}
+.description-2 {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.75rem;
+    text-align: center;
+    width: 85%;
+    line-height: 1.3rem;
+}
+
+/* javascript styles */
+
+.inactive {
+   overflow: hidden;
+   height: 0px;
+} 
+
+.review-active {
+    background-color: gray;
+    color: white;
+}
+
+/* mobile stuff */ 
+
+@media screen and (max-width:500px) {
+
+    .review-item:hover {
+        background-color: gray;
+        color: white;
+    }
+    
+}
