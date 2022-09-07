@@ -99,6 +99,16 @@ body {
     color: darkorange;
 }
 
+.attribution {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+}
+.attribution a {
+    color: white;
+}
+
 /* styles for submitted component */
 
 #after-submit-container {
